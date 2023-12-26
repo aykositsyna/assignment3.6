@@ -12,7 +12,7 @@ namespace program
 
         public override string GetInfo()
         {
-            return base.GetInfo() + "\nJob title: Engineer";
+            return base.GetInfo() + "\nJob title: Engineer\n";
         }
     }
 }

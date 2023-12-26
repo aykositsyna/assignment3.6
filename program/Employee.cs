@@ -22,12 +22,12 @@ namespace program
         {
             string result = "Name: " + Name + "\n" +
                 "Salary: " + BaseSalary + "\n" +
-                "Bank: " + BankService + "\n" +
-                "Salary after banking service: " + CalculateSalary(BaseSalary) + "\n";
+                "Bank: " + BankService.Name + "\n" +
+                "Salary after banking service: " + CalculateSalary() + "\n";
             return result;
         }
 
-        private double CalculateSalary(double salary)
+        private double CalculateSalary()
         {
             return BankService.CalculateSalary(BaseSalary);
         }

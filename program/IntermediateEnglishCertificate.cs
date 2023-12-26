@@ -8,7 +8,7 @@ namespace program
 {
     internal class IntermediateEnglishCertificate : EmployeeDecorator
     {
-        public IntermediateEnglishCertificate(string name, double salary, Employee employee) : base(name, salary, employee)
+        public IntermediateEnglishCertificate(Employee employee) : base(employee.Name, employee.BaseSalary, employee)
         {
         }
 
@@ -16,7 +16,11 @@ namespace program
         public int YearOfCertificate {  get; set; }
         public override string GetInfo()
         {
-            string info = base.GetInfo() + "\nCertification: " + ExaminationTitle + "\nYear of certification: " + YearOfCertificate;
+            string info = employee.GetInfo() + 
+                "\n" + Separator.GetSeparator("-", 10) +
+                "\nCertification: " + ExaminationTitle +
+                "\nYear of certification: " + YearOfCertificate +
+                "\n";
             return info;
         }
     }

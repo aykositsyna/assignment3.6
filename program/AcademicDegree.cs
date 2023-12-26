@@ -8,7 +8,7 @@ namespace program
 {
     internal class AcademicDegree : EmployeeDecorator
     {
-        public AcademicDegree(string name, double salary, Employee employee) : base(name, salary, employee)
+        public AcademicDegree(Employee employee) : base(employee.Name, employee.BaseSalary, employee)
         {
         }
 
@@ -18,10 +18,12 @@ namespace program
 
         public override string GetInfo()
         {
-            string info = base.GetInfo() +
+            string info = employee.GetInfo() +
+                "\n" + Separator.GetSeparator("-", 10) +
                 "\nDissertation title: " + DissertationTitle +
                 "\nYear of dissertation: " + DissertationYear +
-                "\nScience area: " + ScienceArea;
+                "\nScience area: " + ScienceArea +
+                "\n";
             return info;
         }
     }

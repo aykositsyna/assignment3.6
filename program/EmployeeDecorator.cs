@@ -8,7 +8,7 @@ namespace program
 {
     internal class EmployeeDecorator : Employee
     {
-        private Employee employee;
+        protected Employee employee;
         public EmployeeDecorator(string name, double salary, Employee employee) : base(name, salary)
         {
             this.employee = employee;

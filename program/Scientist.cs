@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace program
 {
-    internal class Scientist
+    internal class Scientist : Employee
     {
+        public Scientist(string name, double salary) : base(name, salary) { }
+
+        public override string GetInfo()
+        {
+            return base.GetInfo() + "\nJob title: Scientist";
+        }
     }
 }

@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace program
 {
-    internal class EmployeeDecorator
+    internal class EmployeeDecorator : Employee
     {
+        private Employee employee;
+        public EmployeeDecorator(string name, double salary, Employee employee) : base(name, salary)
+        {
+            this.employee = employee;
+        }
     }
 }

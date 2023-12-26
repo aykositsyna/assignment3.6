@@ -49,7 +49,7 @@
     <Compile Include="Engineer.cs" />
     <Compile Include="Gazprombank.cs" />
     <Compile Include="IBankService.cs" />
-    <Compile Include="IntermediateEnglishSertificate.cs" />
+    <Compile Include="IntermediateEnglishCertificate.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -8,5 +8,7 @@ namespace program
 {
     internal interface IBankService
     {
+        string Name { get; set; }
+        double CalculateSalary(double baseSalary);
     }
 }
